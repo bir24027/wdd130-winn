@@ -72,6 +72,14 @@ nav a:hover{
     grid-column:2/3;
     color:var(--colored-background-text);
 }
+#project-section{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:25px;
+    margin-left:50px;
+    margin-right:50px;
+    margin-top:15px;
+}
 .project-section{
     width:100%;
 }
