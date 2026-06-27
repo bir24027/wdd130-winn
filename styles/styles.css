@@ -86,3 +86,6 @@ nav a:hover{
 .project-section img{
     width:100%;
 }
+.text{
+    border: solid black 1px;
+}
