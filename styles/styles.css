@@ -21,6 +21,8 @@ p,a{
 }
 body{
  margin: 0px;
+ padding:0px;
+ width:100%;
 }
 header{
     background-color:var(--nav-background);
@@ -71,21 +73,86 @@ nav a:hover{
     grid-row:2/3;
     grid-column:2/3;
     color:var(--colored-background-text);
+    
 }
 #project-section{
     display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap:25px;
+    column-gap:25px;
     margin-left:50px;
     margin-right:50px;
     margin-top:15px;
+    align-items:stretch;
+    grid-template-columns:50% 50%;
 }
-.project-section{
+#project-section img{
     width:100%;
+    grid-row:1/2;
 }
-.project-section img{
+#project-section h2{
+    grid-row:2/3;
+    margin:0px;
+    border:solid black 1px;
+    border-bottom:none;
+    padding-top:20px;
+}
+#project-section p{
+    grid-row:3/4;
+    border:solid black 1px;
+    border-bottom:none;
+    border-top:none;
+    margin:0px;
+    padding-top:20px;
+}
+#project-section div{
+    border:solid black 1px;
+    margin:0px;
+    border-top:none;
+    padding-top:20px;
+    text-align:center;
+    padding-bottom:20px;
+}
+#project-section a{
+    grid-row:4/5;
+    place-self:center;
+    text-decoration:none;
+    color:var(--colored-background-text);
+    background-color: var(--colored-text-background);
+    padding:5px;
+    border-radius:5px;
+}
+.physics{
+    grid-column:1/2;
+}
+.programming{
+    grid-column:2/3;
+
+}
+.programming h2{
+    border-bottom:none;
+}
+footer{
+    background-color: var(--nav-background);
+    display:grid;
     width:100%;
+    grid-template-columns:300px 1fr 1fr 1fr;
+    color:var(--colored-background-text);
+    margin-top:30px;
 }
-.text{
-    border: solid black 1px;
+footer img{
+    width:100%;
+    grid-row:1/4;
+}
+footer nav{
+    grid-column:2/3;
+    grid-row:2/3;
+}
+footer nav a{
+    box-sizing:border-box;
+    width: 100%;
+}
+footer p{
+    text-align:center;
+}
+#copy{
+    grid-column:2/3;
 }
