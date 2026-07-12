@@ -156,3 +156,31 @@ footer p{
 #copy{
     grid-column:2/3;
 }
+.child-project-card{
+    display:grid;
+    grid-template-columns:3fr 4fr;
+    column-gap:30px;
+    margin-top:50px;
+    margin-bottom:50px;
+
+}
+.child-project-image{
+    height:100%;
+}
+.child-project-image img{
+    width:100%;
+}
+.subpage{
+    width:70vw;
+    margin-left:50px;
+}
+.subpage h1{
+    text-align:center;
+}
+.subpage a{
+    text-decoration:none;
+    color:var(--colored-background-text);
+    background-color:var(--colored-text-background);
+    padding:7.5px;
+    border-radius:10px;
+}

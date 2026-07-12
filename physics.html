@@ -12,47 +12,71 @@
 
     
     <header>
-        <a href="/" id="icon-link">
+        <a href="/wdd130-winn/" id="icon-link">
             <img src="images/logo-transparent.png" alt="Logo" class="logo">
         </a>
         <nav>
             <a href="physics.html" class="active">Physics</a>
             <a href="programming.html">Programming</a>
-            <a href="/">About Me</a>
+            <a href="#">About Me</a>
         </nav>
     </header>
 
     
-    <main>
+    <main class="subpage">
         <div id="page-title-section">
-            <h1>Physics/Programming Projects</h1>
+            <h1>Physics Projects</h1>
         </div>
 
         <div id="child-projects-container">
             
             <article class="child-project-card">
                 <div class="child-project-image">
-                    <img src="images/physics-image.png" alt="Project Image Place holder">
-                    <p class="image-caption">Project Image</p>
+                    <img src="images/fluid-viscosity.png" alt="Project Image Place holder">
                 </div>
                 <div class="child-project-text">
-                    <h2>Project Title</h2>
-                    <p class="concept-summary">Description of the project and short explanation of concepts critical to the project.</p>
-                    <p class="lorem-text">Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut.</p>
-                    <a href="#" class="btn-learn-more">Learn More</a>
+                    <h2>The Effect of Viscosity and Density of Fluids</h2>
+                    <h3>Description</h3>
+                    <p>
+                       For this project I worked with a partner to design an experiment. We wanted to see if we could write a program using Euler’s method that would predict the time that a falling projectile would reach the bottom of a container of fluid using drag equations. After writing that program, we found some real times by using an electromagnet to drop a small steel ball into a container with different fluids in it. We performed several tests with water, oil, yogurt, Jello, and hand soap. After performing the tests, we compared the final times to the times that our program had predicted. We found that our program was a pretty good model for drag and viscosity. 
+                    </p>
+                    <h3>Explanation</h3>
+                    <p>
+                        All projectiles experience drag, whether they are moving through air or through other fluids. And objects moving through viscous fluids are resistant to motion through that fluid due to the viscosity of the fluid. Both forces act in the direction opposite to the projectile’s movement. Since the projectile is falling, these forces act upward and gravity of course pulls the projectile down. These forces, along with the mass of the ball, can be used to calculate the acceleration of the ball. Since acceleration is the change in velocity over time, an approximation of the future velocity can be calculated by multiplying the current acceleration by a small increment of time. A similar process can be used to find the position using the velocity. Since both drag and the resistance to movement due to viscosity are dependent on velocity, those forces will change as the ball falls, changing the acceleration, and therefore the velocity and position as well.  
+                    </p>
+                    <a href="https://github.com/karinawinn/top-nutation " class="btn-learn-more">Learn More</a>
                 </div>
             </article>
 
             <article class="child-project-card">
                 <div class="child-project-image">
-                    <img src="images/physics-image.png" alt="Project Image Place holder">
-                    <p class="image-caption">Project Image</p>
+                    <img src="images/cfc-co2-sensors.png" alt="Project Image Place holder">
                 </div>
                 <div class="child-project-text">
-                    <h2>Project Title</h2>
-                    <p class="concept-summary">Description of the project and short explanation of concepts critical to the project.</p>
-                    <p class="lorem-text">Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut.</p>
-                    <a href="#" class="btn-learn-more">Learn More</a>
+                    <h2>CFC & CO2 Sensors</h2>
+                    <h3>Description</h3>
+                    <p>
+                       Myself and four other students worked together to design a CO2 sensor and a CFC sensor using microcontrollers. We first researched what instruments we wanted to buy. After purchasing the right instruments, we figured out how to create a circuit so they would be powered and wired to an Arduino microcontroller and connected to an SD card. We then wrote Arduino code to collect data from both instruments and save it to the SD card, then we prepared to fly our instruments on a weather balloon by designing an insulated container for them to be protected against the freezing temperatures of the atmosphere. We then flew the instruments and collected and analyzed our data. We were able to get good data from the CFC sensor, but the data from the CO2 sensor was inconsistent. 
+                    <h3>Explanation</h3>
+                    <p>
+                        Chlorofluorocarbons, or CFCs, are compounds that were once widely used in refrigerants, aerosol propellants, and solvents. They were banned globally in the 1970s due to their contribution to the hole in the ozone layer. We wanted to measure the CFCs in the atmosphere to see what impact the ban has had. We weren’t sure if the CFC sensor was going to work, so we also decided to measure CO2 to see how it changes with altitude. The sensors that we used were specifically designed to work with the Arduino Uno. They each measure the number of CO2 or CFC particles in parts per million. The Arduino code reads the sensor values from the analog input (the pins connected to the sensors), puts a timestamp on it, saves it to the SD card, and prints it to the Serial Monitor. This is repeated once every second. The entire circuit was powered by a lithium battery to make sure data was collected for the entirety of the flight. 
+                    </p>
+                    <a href="https://github.com/karinawinn/CFC-CO2-Sensors" class="btn-learn-more">Learn More</a>
+                </div>
+            </article>
+            <article class="child-project-card">
+                <div class="child-project-image">
+                    <img src="images/spring-pendulum-modeling.png" alt="Project Image Place holder">
+                </div>
+                <div class="child-project-text">
+                    <h2>Spring Pendulum Modeling</h2>
+                    <h3>Description</h3>
+                    <p>
+                      I worked with two other students to create and test a model for a spring pendulum. We first created the mathematical model by using the Lagrange equations with two degrees of freedom, resulting in two equations that we could apply small angle approximations to and solve for two equations that are dependent on time – one for the pendulum angle (acute angle from vertical) and one for the radial change from the spring’s equilibrium length. We then collected data to see if this model is accurate. We created a setup with two connected rulers, and the spring pendulum (a mass hanging from a spring) hanging from a metal bar. We took videos of several tests in which we displaced the mass slightly and let the video run until it stopped. We used the videos to find the position of the mass over time and calculated the displacement of the spring and the pendulum angle from there. We then fit the two equations from our model to graphs of the data. We found that our pendulum angle equation worked well while the spring displacement equation followed the general shape of the graph but didn’t fit exactly. 
+                    <p>
+                        The Lagrangian method is a way physicists describe how objects move by looking at how energy flows through a system instead of focusing directly on forces. Rather than analyzing every force separately, the method creates equations from the system’s total kinetic and potential energy, making complex motion much easier to model mathematically. This approach is especially useful for complicated systems, like a spring pendulum. The Lagrangian equation is developed from that system and can be used for each degree of freedom (plane of movement) in the system. This project is also heavily based on data analysis methods like gradient descent and chi-squared goodness-of-fit analysis. The chi-squared analysis is meant to determine how well a theoretical model matches existing data. The smaller the chi-squared value is, the better the fit is. The gradient descent optimization is a method used to find the best parameter values for a model. An initial guess is made, then small adjustments are made to the parameters in the direction that minimizes error the most. The goal of our experiment was to use the gradient descent method to find parameter values that would minimize the chi-squared value. 
+                    </p>
+                    <a href="https://github.com/karinawinn/Spring-Pendulum-Model" class="btn-learn-more">Learn More</a>
                 </div>
             </article>
         </div>
