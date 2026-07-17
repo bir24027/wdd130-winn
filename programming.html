@@ -3,99 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programming Projects - Portfolio</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" type="image/png" href="images/logo-transparent.png">
-</save>
+    <title>Programming | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    
-    <header>
-        <a href="/wdd130-winn/" id="icon-link">
-            <img src="images/logo-transparent.png" alt="Logo" class="logo">
-        </a>
-        <nav>
-            <a href="physics.html" class="active">Physics</a>
-            <a href="programming.html">Programming</a>
-            <a href="#">About Me</a>
-        </nav>
-    </header>
-
-    
-    <main class="subpage">
-        <div id="page-title-section">
-            <h1>Programming Projects</h1>
+<header>
+    <a href="index.html">
+        <img src="images/logo.png" alt="Website Logo" class="logo">
+    </a>
+    <nav>
+        <a href="physics.html">Physics</a>
+        <a href="programming.html">Programming</a>
+        <a href="aboutme.html">About Me</a>
+    </nav>
+</header>
+<main>
+    <h1>Programming Projects</h1>
+    <section class="project">
+        <img src="images/project1.jpg" alt="Project Image">
+        <div class="project-info">
+            <h2>Project Title</h2>
+            <p class="summary">
+                Description of the project and short explanation of concepts critical to the project.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Explain what
+                the project does, what programming language you used, and what you
+                learned while completing it.
+            </p>
+            <a href="#" class="button">Learn More</a>
         </div>
-
-        <div id="child-projects-container">
-            
-            <article class="child-project-card">
-                <div class="child-project-image">
-                    <img src="images/top-nutation.png" alt="Project Image Place holder">
-                </div>
-                <div class="child-project-text">
-                    <h2>Top Nutation</h2>
-                    <h3>Description</h3>
-                    <p>
-                        This project was the cumulation of everything I learned about programming with functions. I wrote a program that uses several functions I created to visualize the rotation of a top and find an angular frequency at which the top can rotate with a constant vertical angle (theta). To do this, it first calculates the potential energy (a function of theta) for a range of theta values. Then it creates a graph of the potential energy vs theta. After that the program finds the minimum potential energy and the theta value corresponding with that. The program then takes that theta value and uses it to calculate the approximate and exact angular frequencies for that constant theta value.
-                    </p>
-                    <h3>Explanation</h3>
-                    <p>
-                        Nutation is a swaying or nodding motion in the rotation axis of an object that is mostly symmetrical about that axis. Think of the tilt in the earth’s axis. The precession rate of an object is how its nutation changes over time. This program focuses on the nutation of a top, which is controlled by its effective potential energy. The main function of this program calls all the other functions within the program to calculate the vertical angle and the potential energy, graph the potential energy vs. the vertical angle, find the angle associated with the minimum potential energy, and finally calculate the approximate and exact precession rates. 
-                    </p>
-                    <a href="https://github.com/karinawinn/top-nutation" class="btn-learn-more">Learn More</a>
-                </div>
-            </article>
-
-            <article class="child-project-card">
-                <div class="child-project-image">
-                    <img src="images\projectile-motion-program.jpg" alt="Project Image Place holder">
-                </div>
-                <div class="child-project-text">
-                    <h2>Advanced Projectile Motion Simulation</h2>
-                    <h3>Description</h3>
-                    <p>
-                        For this project, I wrote a C# program that uses classes and inheritance to calculate the trajectory of a custom projectile. It includes a text menu that allows the user to enter custom parameters for the projectile and environment as well as choose what factors should be factored into calculating the trajectory. Those factors include adiabatic density, wind, magnus force, and viscous collision. Once they are chosen, the program uses the associated class or classes to calculate the trajectory and display a set of x and y coordinates to the user. 
-                    </p>
-                    <h3>Explanation</h3>
-                    <p>
-                        When any object is shot or thrown in an environment with gravity, it experiences projectile motion and has a parabolic trajectory that can be calculated. In this particular program, I used a 4th order Runge-Kutta technique, which uses the acceleration in each direction to predict the change in velocity and the velocity to predict the change in position. The program itself contains a class for each factor that inherits functions using the Runge-Kutta technique from the Trajectory class. There is also a custom class for any combination of two or more factors and a custom class for all the factors. Each class has additional functions or overrides the original functions when needed to customize the calculations for the situation. 
-                    </p>
-                    <a href="https://github.com/karinawinn/cse210-projects/tree/main/final/FinalProject" class="btn-learn-more">Learn More</a>
-                </div>
-            </article>
-            <article class="child-project-card">
-                <div class="child-project-image">
-                    <img src="images/todo-app.png" alt="Project Image Place holder">
-                </div>
-                <div class="child-project-text">
-                    <h2>To-Do List Web Application</h2>
-                    <h3>Description</h3>
-                    <p>
-                       This project was a collaboration between me and three other students to create a to-do list application with user authentication. The first page a user encounters is the login page, where the user can enter their credentials, the backend will check them against the username and password stored in the database, and the user moves on to the list page. There is a register button as well that takes the user to a page where they can create a username and password and an entry can be created in the database. The list page displays all the tasks that have been created with a name and a description, which are also stored in the database. New tasks can be added at the bottom and specific tasks can be searched for at the top. 
-                    </p>
-                    <h3>Explanation</h3>
-                    <p>
-                        This web application consists of the frontend and the backend. The frontend contains four HTML page templates that determine the structure of each page of the website, the images, and the CSS file that determines the styling of the pages. The backend consists of two python files, the server, and the MySQL database. The app file uses Python Flask to render the pages, and the api file communicates between the frontend and the server. When a request is made on the frontend (a button is pushed, a page is loaded, etc.), the api communicates the request to the server, which gets the information from the database and gives it to the api, then finally the api gives the information to the frontend so it can be displayed.  
-                    </p>
-                    <a href="https://github.com/mwhepworth1/cse310-s1-cloud-databases" class="btn-learn-more">Learn More</a>
-                </div>
-            </article>
+    </section>
+    <section class="project">
+        <img src="images/project2.jpg" alt="Project Image">
+        <div class="project-info">
+            <h2>Project Title</h2>
+            <p class="summary">
+                Description of the project and short explanation of concepts critical to the project.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Describe
+                another project and explain what challenges you overcame.
+            </p>
+            <a href="#" class="button">Learn More</a>
         </div>
-    </main>
-
-    
-    <footer>
-        <img src="images/logo-landscape-transparent.png" class="logo-footer" alt="Footer Logo">
-        <p>Contact Me!</p>
-        <nav>
-            <a href="https://www.linkedin.com/in/karwinns10">LinkedIn</a>
-            <a href="https://github.com/karinawinn">GitHub</a>
-            <a href="mailto:karinawinn@icloud.com">Email</a>
-        </nav>
-        <p>&copy; 2026 Physics and Programming Portfolio. All rights reserved.</p>
-    </footer>
-
+    </section>
+    <section class="project">
+        <img src="images/project3.jpg" alt="Project Image">
+        <div class="project-info">
+            <h2>Project Title</h2>
+            <p class="summary">
+                Description of the project and short explanation of concepts critical to the project.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Include
+                another programming project you are proud of.
+            </p>
+            <a href="#" class="button">Learn More</a>
+        </div>
+    </section>
+</main>
+<footer>
+    <img src="images/logo.png" alt="Website Logo" class="footer-logo">
+    <div class="footer-info">
+        <h3>Contact Me!</h3>
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+        <a href="#">Email</a>
+        <p>&copy; 2026 Your Website. All rights reserved.</p>
+    </div>
+</footer>
 </body>
 </html>
